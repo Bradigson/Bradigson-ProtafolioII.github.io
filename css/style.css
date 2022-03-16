@@ -400,6 +400,10 @@ animation-timing-function:linear;
 #sesion2__article2{
     color:#fff;
     padding-top:50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
 }
 #sesion2__article2 h2{
     margin-bottom:50px;
@@ -416,7 +420,13 @@ animation-timing-function:linear;
     font-family:var(--fontStyle);
     border-radius:5px;
 }
-.bxl-html5, .bxl-css3, .bxl-bootstrap, .bxs-file-js, .bxl-git{
+.html, .css, .bootstrap, .js, .git{
+    width:200px;
+    height:160px;
+    font-size:15px;
+}
+.bxl-html5, .bxl-css3, .bxl-bootstrap, 
+.bxs-file-js, .bxl-git, .bxl-sass, .bxl-react, .bxl-redux{
     font-size:100px;
     text-shadow:1px 4px 2px rgba(0,0,0);
   
@@ -440,11 +450,30 @@ animation-timing-function:linear;
     0 0 30px #A569BD ,
     0 0 60px #A569BD ;
 }
+.html:hover > .bxl-sass{
+    text-shadow:0 0 5px #af1c72,
+    0 0 15px #af1c72,
+    0 0 30px #af1c72,
+    0 0 60px #af1c72;
+}
 .js:hover > .bxs-file-js{
     text-shadow:0 0 5px #ffec40,
     0 0 15px #ffec40,
     0 0 30px #ffec40,
     0 0 60px #ffec40;
+}
+.css:hover > .bxl-react{
+    text-shadow:0 0 5px #2db2ff,
+    0 0 15px #2db2ff,
+    0 0 30px #2db2ff,
+    0 0 60px #2db2ff;
+}
+.bootstrap:hover > .bxl-redux{
+    
+    text-shadow:0 0 5px #A569BD,
+    0 0 15px #A569BD ,
+    0 0 30px #A569BD ,
+    0 0 60px #A569BD ;
 }
 .git:hover > .bxl-git{
     text-shadow:0 0 5px #ff6229,
@@ -492,7 +521,7 @@ animation-timing-function:linear;
                inset -10px -10px 15px rgba(255,255,255,0.24);
 }
 
-.service1::after{
+/* .service1::after{
     content:"";
     display:block;
     width:25px;
@@ -504,7 +533,7 @@ animation-timing-function:linear;
     margin-left:-70px;
     animation:radius 5s linear infinite alternate;
 
-}
+} */
 .service1:hover{
     animation:radius 5s linear infinite alternate;
 
@@ -543,9 +572,7 @@ animation-timing-function:linear;
 
 
 /*Section Three*/
-.sesion3{
 
-}
 #sesion3__article1{
     padding:15px 10px;
     padding-bottom:30px;
@@ -850,6 +877,25 @@ footer{
 
 
 @media screen and (min-width:411px){
+
+    #sesion2__article2{
+        color:#fff;
+        padding-top:50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        place-items: center;
+    }
+    .html, .css, .bootstrap, .js, .git{
+        width:200px;
+        height:160px;
+        font-size:15px;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        place-items: center;
+        place-content: center;
+    }
     .bx-menu{
         font-size:60px;
     }
@@ -1130,12 +1176,64 @@ footer{
 
 
 @media screen and (min-width:1026px){
+    header{
+        background:none;
+        backdrop-filter: unset;
+        padding:40px 100px;
+        transition:all 1s;
+    }
+    header.sticky{
+        padding:5px 100px;
+        background:#08062A;
+        
+    }
+    #menu ul li >a{
+        margin-right:60px;
+    }
+    #menu ul li >a:hover{
+        margin-right:60px;
+        color:#fff;
+        text-shadow:0 0 5px #eee,
+        0 0 15px #eee,
+        0 0 30px  #eee,
+        0 0 60px #eee;
+
+    }
+    #menu ul li > a::before{
+        content:"";
+        display:block;
+        background:#eee;
+        width:0px;
+        opacity:0;
+        height:4px;
+        position:absolute;
+        margin-top:35px;
+        border-radius:20px;
+        transition:all 1s;
+
+    }
+   
+    #menu ul li > a:hover::before{
+
+        width:115px;
+        opacity:unset;
+
+    }
+    ::-webkit-scrollbar{
+        background:#08062A;
+        width:12px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:#eee;
+        border-radius:20px;
+        border:3px solid #08062A;
+    }
     .sesion1{
         height:650px;
     }
     @keyframes sfectmove{
         0%{
-            transform:translatex(-1750px);
+            transform:translatex(-2770px);
         }
     }
     #sesion1__title > h1{
@@ -1161,8 +1259,8 @@ footer{
    
 
     .html, .css, .bootstrap, .js, .git{
-        width:300px;
-        height:370px;
+        width:200px;
+        height:160px;
         font-size:15px;
     }
 
@@ -1208,5 +1306,34 @@ footer{
     }
     .linkedin > h3{
         font-size:22px;
+    }
+
+
+    .animado{
+        opacity:0;
+        transition:all 2s;
+    }
+    .animadodown{
+        animation:animadodown 2s;
+    }
+    @keyframes animadodown{
+        0%{
+            transform:translateY(80px);
+        }
+        100%{
+            transform:translateY(0px);
+        }
+    }
+     
+    
+    /*========section two a chage added======*/
+     #sesion2__img1{
+        right:-230px;
+    }
+
+    @keyframes asteroide{
+        0%{
+            transform:translatex(-1800px) rotate(-360deg);
+        }
     }
 }

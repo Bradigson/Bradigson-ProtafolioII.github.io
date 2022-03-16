@@ -42,20 +42,20 @@
                             <a class="nav-link" href="#service">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyect">My Proyects</a>
+                            <a class="nav-link" href="#proyect" id="header__a5">My Proyects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#hobby">My Hobbies</a>
+                            <a class="nav-link" href="#hobby" id="header__a6">My Hobbies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contect">Contact Me</a>
+                            <a class="nav-link" href="#contect" id="header__a7">Contact Me</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <!--section one-->
+        <!--========================section one======================-->
         <section class="sesion1" id="home">
             <div class="sesion1__sun"></div>
             <div class="sesion1__star1"></div>
@@ -94,7 +94,7 @@
             </div>
         </section>
 
-        <!--section two-->
+        <!--======================section two=====================-->
         <section class="sesion2" id="aboutme">
         
             <div class="sesion2__star1"></div>
@@ -110,61 +110,71 @@
             <div class="sesion2__star10"></div>
            <article class="sesion2__article1">
            <div class="artile1__content">
-            <h2 class="text-center">About Me</h2>
-            <h3>Who am I?</h3>
-            <p><b>I'm Bradigson Nuñez a Web Developer.</b>
+               <h2 class="text-center">About Me</h2>
+               <h3 class="sesion2__about-content">Who am I?</h3>
+               <p class="sesion2__about-content"><b>I'm Bradigson Nuñez a Web Developer.</b>
                 I am a Front End developer with experience building websites and web applications. I specialize in JavaScript, and have professional experience working with React.
                 I am always seeking to improve my skills to continually grow professionally to be able to contribute consistently to the workgroup with which I am.</p>
-                <a href="CVBN.pdf"  download="CV" target="_BLANK" class="btn btn-dark" id="sesion2__a"><i class='bx bxs-download' ></i> Download My CV Here</a>
+
+                <a href="CVBN.pdf"  download="" target="_BLANK" class="btn btn-dark sesion2__about-content" id="sesion2__a"><i class='bx bxs-download' ></i> Download My CV Here</a>
            </div>
            </article>
 
 
            <!--Article two-->
            <article class="text-center" id="sesion2__article2">
-               <h2>My Skills</h2>
+               <div class=" mb-4"><h2 >My Skills</h2></div>
                <div class="skills">
 
-                   <div class="html">
+                   <div class="html animado">
                     <i class='bx bxl-html5'></i>
                     <div class="icon-box-name text-danger">HTML</div>
-                    <p><b>HyperText Markup Language (HTML)</b> is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
-                    </p>
+                   
                     </div>
 
 
                
-                    <div class="css">
+                    <div class="css animado">
                     <i class='bx bxl-css3'></i>
                     <div class="icon-box-name text-primary">CSS</div>
-                    <p>
-                       <b>CSS stands for Cascading Style Sheets.</b> It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
-                    </p>
+                   
                     </div>
 
 
-                    <div class="bootstrap">
+                    <div class="bootstrap animado">
                         <i class='bx bxl-bootstrap' ></i>
                         <div class="icon-box-name text-info">BOOTSTRAP</div>
-                        <p>
-                        <b>Bootstrap</b> is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms. Bootstrap also supports JavaScript extensions.
-                        </p>
+                        
                     </div>
 
-                    <div class="js">
+                    <div class="html animado">
+                        <i class='bx bxl-sass'></i>
+                        <div class="icon-box-name text-danger">SASS</div>
+                       
+                    </div>
+
+                    <div class="js animado">
                         <i class='bx bxs-file-js' ></i>
                         <div class="icon-box-name text-warning">JAVASCRIPT</div>
-                        <p>
-                       <b> JavaScript</b> is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
-                        </p>
+                        
                     </div>
 
-                    <div class="git">
+                    <div class="css animado">
+                        <i class='bx bxl-react' ></i>
+                        <div class="icon-box-name text-primary">React</div>
+                       
+                    </div>
+
+                    <div class="bootstrap animado">
+                        <i class='bx bxl-redux' ></i>
+                        <div class="icon-box-name text-info">Redux</div>
+                        
+                    </div>
+
+                    <div class="git animado">
                         <i class='bx bxl-git' ></i>
                         <div class="icon-box-name text-danger">GIT</div>
-                        <p>
-                       <b>Git</b> is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source.
-                        </p>
+                        
                     </div>
       
                </div>            
@@ -177,8 +187,8 @@
                <hr id="ati3__hr">
                <h3 class="text-center">Services I offer to my clients</h3>
                <div class="services">
+                   
                    <div class="service1">
-                 
                     <div id="serv">
                         <img src="imgs/responsive-design.svg" id="artl3__img1">
                         <h4>Fully Responsive</h4>
@@ -202,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="service1">
+                <div class="service1 ">
                     <div>
                         <img src="imgs/integration.svg" id="artl3__img4">
                         <h4>Social Media Integration</h4>
@@ -482,7 +492,7 @@
                 <div class="linkedin">
                     <h3 date-toggle="tooltip" title="">CONTACT ME</h3>
                     <hr id="footer__hr">
-                    <a href="https://www.linkedin.com/feed/" target="_BLANK"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.linkedin.com/in/bradigson-nu%C3%B1ez-9b5908234/" target="_BLANK"><i class='bx bxl-linkedin' ></i></a>
                 </div>
             </div>
         </footer>
