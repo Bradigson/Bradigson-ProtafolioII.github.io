@@ -431,6 +431,7 @@ animation-timing-function:linear;
 .bxs-file-js, .bxl-git, .bxl-sass, .bxl-react, .bxl-redux{
     font-size:100px;
     text-shadow:1px 4px 2px rgba(0,0,0);
+    padding-top:25px;
   
 }
 .html:hover > .bxl-html5{
