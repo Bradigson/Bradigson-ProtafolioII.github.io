@@ -611,13 +611,13 @@ background-attachment: fixed;
     height:190px;
     margin-bottom:30px;
     border-radius:10px;
-    background:url(../imgs/Pro1.jpg);
+    background:url(../imgs/students.png);
     background-size:cover;
     margin-bottom:60px;
 
 }
 .proyect2{
-    background:url(../imgs/Proy2.jpg);
+    background:url(../imgs/qr.png);
     background-size:cover;
 }
 .proyect3{
@@ -633,11 +633,15 @@ background-attachment: fixed;
     background-size:cover;
 }
 .proyect6{
-    background:url(../imgs/proy6.jpg);
+    background:url(../imgs/weather.png);
     background-size:cover;
 }
 .proyect7{
-    background:url(../imgs/proy7.jpg);
+    background:url(../imgs/guess\ game.png);
+    background-size:cover;
+}
+.proyect8{
+    background:url(../imgs/BDCOIN.png);
     background-size:cover;
 }
 .proyect1__cover{
