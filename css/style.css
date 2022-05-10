@@ -644,6 +644,10 @@ background-attachment: fixed;
     background:url(../imgs/BDCOIN.png);
     background-size:cover;
 }
+.proyect9{
+    background:url(../imgs/chat.png);
+    background-size:cover;
+}
 .proyect1__cover{
 
     background:rgba(9, 7, 146,.6);
