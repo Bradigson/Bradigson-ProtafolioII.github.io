@@ -648,6 +648,11 @@ background-attachment: fixed;
     background:url(../imgs/chat.png);
     background-size:cover;
 }
+
+.proyect10{
+    background:url(../imgs/client-assis.png);
+    background-size:cover;
+}
 .proyect1__cover{
 
     background:rgba(9, 7, 146,.6);
