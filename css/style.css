@@ -419,22 +419,23 @@ animation-timing-function:linear;
 .skills{
     padding:0px 10px;
 }
-.html, .css, .bootstrap, .js, .git{
+.html, .css, .bootstrap, .js, .git, .node{
     padding:0px 10px;
-    background:rgb(18, 11, 117,.5);
+    background:#120b7580;
     padding-bottom:5px;
     margin-bottom:30px;
     text-shadow:1px 2px 1px rgba(0,0,0);
     font-family:var(--fontStyle);
     border-radius:5px;
 }
-.html, .css, .bootstrap, .js, .git{
+.html, .css, .bootstrap, .js, .git, .node{
     width:200px;
     height:160px;
     font-size:15px;
 }
 .bxl-html5, .bxl-css3, .bxl-bootstrap, 
-.bxs-file-js, .bxl-git, .bxl-sass, .bxl-react, .bxl-redux, .bxl-tailwind-css, .bxl-firebase{
+.bxs-file-js, .bxl-git, .bxl-sass, .bxl-react, .bxl-redux, .bxl-tailwind-css, .bxl-firebase,
+.bxl-nodejs, .bxl-typescript{
     font-size:100px;
     text-shadow:1px 4px 2px rgba(0,0,0);
     padding-top:25px;
@@ -504,6 +505,14 @@ animation-timing-function:linear;
     0 0 30px #ff6229,
     0 0 60px #ff6229;
 }
+
+.node:hover > .bxl-nodejs{
+    text-shadow:0 0 5px #2ECC71,
+    0 0 15px #2ECC71,
+    0 0 30px #2ECC71,
+    0 0 60px #2ECC71;
+}
+
 .html p, .css p{
     text-align:left;
 
@@ -651,6 +660,10 @@ background-attachment: fixed;
 
 .proyect10{
     background:url(../imgs/client-assis.png);
+    background-size:cover;
+}
+.proyect11{
+    background:url(../imgs/prm.swagger.png);
     background-size:cover;
 }
 .proyect1__cover{
